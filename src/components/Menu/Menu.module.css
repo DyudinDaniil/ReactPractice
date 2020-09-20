@@ -1,0 +1,13 @@
+.menu {
+    grid-area: menu;
+    position: fixed;
+}
+.list {
+    margin-top: 15vh;
+}
+.item {
+    padding-bottom: 18px;
+}
+.item:last-child{
+    padding-bottom: 0;
+}

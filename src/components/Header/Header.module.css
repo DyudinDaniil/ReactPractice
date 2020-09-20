@@ -1,0 +1,26 @@
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    width: 1200px;
+    position: sticky;
+    top: -10px;
+    background-color: #FFFAFA;
+}
+.title {
+    font-size: 22px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile__photo {
+    width: 30px;
+    height: 30px;
+    background-color: #DCDCDC;
+}
+.profile__nick {
+    padding-left: 10px;
+}
