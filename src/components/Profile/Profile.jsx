@@ -2,7 +2,7 @@ import React from 'react';
 import profile from './Profile.module.css';
 import UserPosts from './UserPosts/UserPosts';
 
-const Content = () => {
+const Profile = () => {
     return (
         <div className={profile.content}>
             <div className={profile.userProfile}>
@@ -40,4 +40,4 @@ const Content = () => {
     );
 }
 
-export default Content;
+export default Profile;

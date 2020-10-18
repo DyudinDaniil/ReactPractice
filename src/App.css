@@ -13,3 +13,6 @@
     grid-template-areas: 
     "menu content";
 }
+.content {
+    grid-area: content;
+}

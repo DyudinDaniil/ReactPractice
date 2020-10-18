@@ -5,10 +5,8 @@ import Post from './Post/Post';
 const UserPosts = () => {
     return (
         <div className={posts.content}>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post message='It is my first post'/>
+            <Post message='How are you?'/>
         </div>
     );
 }
