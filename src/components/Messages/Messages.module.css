@@ -1,0 +1,17 @@
+.content {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.nameUsers {
+    padding: 25px 0;
+    border-right: 1px solid #696969;
+}
+.nameUsers__item {
+    padding-bottom: 12px;
+}
+.nameUsers__link.active {
+    color: #696969;
+}
+.dialogsWindow {
+    padding: 25px 0 25px 15px;
+}

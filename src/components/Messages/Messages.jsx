@@ -1,43 +1,42 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import messages from './Messages.module.css';
+
+const UsersItem = (props) => {
+    let path = "/messages/" + props.name;
+
+    return (
+        <li className={messages.nameUsers__item}>
+            <NavLink to={path} className={messages.nameUsers__link} activeClassName={messages.active}>{props.name}</NavLink>
+        </li>
+    );
+}
+
+const Message = (props) => {
+    return (
+        <div className={messages.dialogsWindow__dialog}>
+            {props.message}
+        </div>
+    );
+}
 
 const Messages = (props) => {
     return (
         <div className={messages.content}>
             <ul className={messages.nameUsers}>
-                <li className={messages.nameUsers__item}>
-                    Maria
-                </li>
-                <li className={messages.nameUsers__item}>
-                    Nick
-                </li>
-                <li className={messages.nameUsers__item}>
-                    Jhon
-                </li>
-                <li className={messages.nameUsers__item}>
-                    Daniil
-                </li>
-                <li className={messages.nameUsers__item}>
-                    Lara
-                </li>
+                <UsersItem name="Maria" />
+                <UsersItem name="Nick" />
+                <UsersItem name="Jhon" />
+                <UsersItem name="Daniil" />
+                <UsersItem name="Lara" />
             </ul>
 
             <div className={messages.dialogsWindow}>
-                <div className={messages.dialogsWindow__dialog}>
-                    welcome
-                </div>
-                <div className={messages.dialogsWindow__dialog}>
-                    hello
-                </div>
-                <div className={messages.dialogsWindow__dialog}>
-                    good
-                </div>
-                <div className={messages.dialogsWindow__dialog}>
-                    bye
-                </div>
-                <div className={messages.dialogsWindow__dialog}>
-                    luck
-                </div>
+                <Message message="Hi" />
+                <Message message="hello" />
+                <Message message="good" />
+                <Message message="bye" />
+                <Message message="luck" />
             </div>
         </div>
     );
