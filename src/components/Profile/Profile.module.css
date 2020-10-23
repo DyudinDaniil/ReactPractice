@@ -3,31 +3,3 @@
     text-align: center;
     height: 150vh;
 }
-.userProfile {
-    display: flex;
-    align-items: center;
-    padding-bottom: 140px;
-}
-.userProfile__main {
-    margin-right: 120px;
-}
-.userProfile__photo {
-    width: 120px;
-    height: 120px;
-    background-color: #DCDCDC;
-}
-.userProfile__nickname {
-    font-size: 24px;
-    padding-top: 5px;
-}
-.userProfile__inf {
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: left;
-}
-.userProfile__inf__item {
-    font-size: 22px;
-    text-transform: uppercase;
-    line-height: 1.8rem;
-    padding-right: 60px;
-}

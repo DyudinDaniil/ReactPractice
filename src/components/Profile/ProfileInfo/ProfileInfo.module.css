@@ -1,0 +1,32 @@
+.content {
+    width: 100%;
+    text-align: center;
+}
+.userProfile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 140px;
+}
+.main {
+    margin-right: 120px;
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    background-color: #DCDCDC;
+}
+.nickname {
+    font-size: 24px;
+    padding-top: 5px;
+}
+.inf {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+}
+.inf__item {
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.8rem;
+    padding-right: 60px;
+}
