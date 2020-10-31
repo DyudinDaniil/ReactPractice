@@ -3,11 +3,14 @@
     grid-template-columns: 2fr 10fr;
 }
 .nameUsers {
-    padding: 25px 0;
+    padding: 25px 0 13px 0;
     border-right: 1px solid #696969;
 }
 .nameUsers__item {
     padding-bottom: 12px;
+}
+.nameUsers__item :last-child {
+    padding-bottom: 0;
 }
 .nameUsers__link.active {
     color: #696969;

@@ -26,7 +26,7 @@ const Messages = (props) => {
     ]
 
     let dialogsElements = dialogsData.map(dialog => <UsersItem name={dialog.name} />);
-    let messagesElements = messagesData.map(message => <MessagesItem message={message.message} />)
+    let messagesElements = messagesData.map(message => <MessagesItem message={message.message} />);
 
     return (
         <div className={messages.content}>
