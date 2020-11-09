@@ -4,7 +4,7 @@ import messages from './../Messages.module.css';
 const MessagesItem = (props) => {
     return (
         <div className={messages.dialogsWindow__dialog}>
-            {props.message}
+            <span>{props.message}</span>
         </div>
     );
 }

@@ -1,0 +1,32 @@
+.content {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #DCDCDC;
+}
+.ind {
+    display: block;
+    text-align: center;
+}
+.ind__img {
+    width: 70px;
+    height: 70px;
+    background-color: #DCDCDC;
+    margin-bottom: 15px;
+}
+.info__sub, .info__posts {
+    padding-bottom: 13px;
+}
+.info__link a {
+    color: #FFFAFA;
+    padding: 5px 12px;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    border: 1px solid dodgerblue;
+    transition-duration: .5s;
+}
+.info__link a:hover {
+    color: dodgerblue;
+    background-color: #FFFAFA;
+}

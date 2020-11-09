@@ -25,6 +25,15 @@ let state = {
             {id: 4, message: 'bye'},
             {id: 5, message: 'luck'}
         ]
+    },
+    teamsPage: {
+        teamsData: [
+            {id: 1, name: 'it-school', sub: 25, posts: 120},
+            {id: 2, name: 'new films', sub: 1178, posts: 1190},
+            {id: 3, name: 'GOTY', sub: 567, posts: 566},
+            {id: 4, name: 'library', sub: 208, posts: 240},
+            {id: 5, name: 'tutorials', sub: 157, posts: 435}
+        ]
     }
 }
 
