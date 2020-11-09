@@ -10,7 +10,7 @@ import Teams from './components/Teams/Teams';
 import Music from './components/Music/Music';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="app">
@@ -19,11 +19,11 @@ const App = () => {
         <div className="wrap">
           <Menu />
           <div className="content">
-            <Route path='/profile' component={Profile} />
-            <Route path='/news' component={News} />
-            <Route path='/messages' component={Messages} />
-            <Route path='/teams' component={Teams} />
-            <Route path='/music' component={Music} />
+            <Route path='/profile' render={() => <Profile state={props.state.profilePage} />} />
+            <Route path='/news' render={() => <News />} />
+            <Route path='/messages' render={() => <Messages state={props.state.messagesPage} />} />
+            <Route path='/teams' render={() => <Teams />} />
+            <Route path='/music' render={() => <Music />} />
           </div>
         </div>
       </div>
