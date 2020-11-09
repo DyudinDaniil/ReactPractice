@@ -15,7 +15,10 @@
     background-color: #DCDCDC;
     margin-bottom: 15px;
 }
-.info__sub, .info__posts {
+.info__sub {
+    padding-bottom: 8px;
+}
+.info__posts {
     padding-bottom: 13px;
 }
 .info__link a {
@@ -24,7 +27,7 @@
     background-color: dodgerblue;
     border-radius: 8px;
     border: 1px solid dodgerblue;
-    transition-duration: .5s;
+    transition-duration: .2s;
 }
 .info__link a:hover {
     color: dodgerblue;
