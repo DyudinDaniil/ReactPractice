@@ -5,17 +5,20 @@ const AddPost = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
+        props.addPost();
+    }
+
+    let onPostChange = () => {
         let contentPost = newPostElement.current.value;
-        props.addPost(contentPost);
-        newPostElement.current.value = ' ';
+        props.updateNewPostText(contentPost);
     }
 
     return (
         <div className={profile.content}>
             <div className={profile.add}>
-                <a onClick={addPost} href="#" className={profile.add__link}>POST:</a>
+                <div onClick={addPost} className={profile.add__link}>POST:</div>
                 <div className={profile.add__text}>
-                    <textarea ref={newPostElement}></textarea>
+                    <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText} />
                 </div>
             </div>
         </div>

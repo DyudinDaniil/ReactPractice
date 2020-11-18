@@ -4,3 +4,6 @@
     display: flex;
     padding-bottom: 42px;
 }
+.add__link {
+    cursor: pointer;
+}

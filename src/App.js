@@ -19,7 +19,11 @@ const App = (props) => {
         <div className="wrap">
           <Menu />
           <div className="content">
-            <Route path='/profile' render={() => <Profile state={props.state.profilePage} addPost={props.addPost} />} />
+            <Route path='/profile' render={() => <Profile
+                profilePage={props.state.profilePage}
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
+            />} />
             <Route path='/news' render={() => <News />} />
             <Route path='/messages' render={() => <Messages state={props.state.messagesPage} />} />
             <Route path='/teams' render={() => <Teams state={props.state.teamsPage} />} />
