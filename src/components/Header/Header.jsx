@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import header from './Header.module.css';
 
 const Header = () => {
@@ -8,12 +9,12 @@ const Header = () => {
                 LOGO NAME
             </h1>
 
-            <a href="#" className={header.profile}>
+            <NavLink to="/profile" className={header.profile}>
                 <div className={header.profile__photo}>
                     <img src="" alt=""/>
                 </div>
                 <div className={header.profile__nick}>Nick name</div>
-            </a>
+            </NavLink>
         </header>
     );
 }
